@@ -1,0 +1,78 @@
+projects:
+
+  - project_id: proj_healthcare_access_mapping
+    title: Healthcare Access Mapping via Food Environment and Demographic Analysis
+    source_type: project
+    lane_support:
+      primary:
+        - lane_data_ml_analyst_engineer
+      secondary:
+        - lane_py_node_aws_genai_fullstack
+    keyword_tags:
+      - spark
+      - hadoop
+      - geopandas
+      - tableau
+      - geospatial_analysis
+      - policy_analytics
+      - healthcare_data
+      - socioeconomic_analysis
+
+  - project_id: proj_breast_cancer_diagnosis
+    title: Classifying and Clustering for Breast Cancer Diagnosis
+    source_type: project
+    lane_support:
+      primary:
+        - lane_data_ml_analyst_engineer
+    keyword_tags:
+      - machine_learning
+      - classification
+      - clustering
+      - svd
+      - isolation_forest
+      - feature_engineering
+      - healthcare_analytics
+
+  - project_id: proj_network_security_anomaly_detection
+    title: Enhancing Network Security Through Advanced Anomaly Detection
+    source_type: project
+    lane_support:
+      primary:
+        - lane_data_ml_analyst_engineer
+      secondary:
+        - lane_py_node_aws_genai_fullstack
+    keyword_tags:
+      - anomaly_detection
+      - autoencoders
+      - transfer_learning
+      - cybersecurity
+      - ml_models
+
+  - project_id: proj_sentiment_analysis_deep_learning
+    title: Sentiment Analysis with Deep Learning
+    source_type: project
+    lane_support:
+      primary:
+        - lane_py_node_aws_genai_fullstack
+      secondary:
+        - lane_data_ml_analyst_engineer
+    keyword_tags:
+      - bert
+      - transformers
+      - nlp
+      - sentiment_analysis
+      - deep_learning
+
+  - project_id: proj_grocery_store_distribution
+    title: US Population and Grocery Store Distribution Analysis
+    source_type: project
+    lane_support:
+      primary:
+        - lane_data_ml_analyst_engineer
+    keyword_tags:
+      - spark
+      - hadoop
+      - data_cleaning
+      - aggregation
+      - usda_dataset
+      - policy_analytics

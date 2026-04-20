@@ -1,0 +1,66 @@
+I want you to act as my product architect and technical planner for a job-search automation pipeline that I will implement in VS Code with Codex.
+
+My goal:
+Build a Google-first pipeline for job discovery, scoring, resume tailoring, cover letter drafting, application tracking, and optional alerts.
+
+Constraints:
+- I want an overnight MVP first, not a huge system.
+- I do not want to use n8n.
+- I want Google tools as the base where possible.
+- I may use free tools/extensions where helpful.
+- I want to minimize LLM token usage.
+- I want the system to assist heavily, but final review stays with me before submission.
+- I care about making this a strong portfolio/recruiter-facing project.
+
+Core workflow I want:
+1. Ingest jobs from selected job sources or job pages.
+2. Store them in Google Sheets, ideally with one master spreadsheet and weekly tabs or weekly grouping.
+3. Run a cheap rule-based / NLP pre-score against my profile before using an LLM.
+4. For shortlisted jobs, generate:
+   - fit score
+   - missing requirements
+   - positioning insights
+   - “what to emphasize” labels
+5. Use those insights to tailor a master resume in Google Docs without rewriting the whole resume.
+6. Draft a cover letter aligned to the role.
+7. Save outputs in a clean Drive folder structure.
+8. Track status in Google Sheets.
+9. Optionally send an alert when an application packet is ready.
+10. Optionally support autofill for common ATS flows like Greenhouse / Lever later.
+
+Decisions I want you to make:
+- Recommend the best MVP architecture.
+- Decide what should be Google Apps Script vs Python vs browser automation.
+- Suggest where free tools can replace custom work.
+- Suggest what should be built now vs later.
+- Suggest how to save drafts, versions, and metadata without clutter.
+- Suggest how to structure prompts for the scoring model and tailoring model.
+- Suggest how to avoid over-automation and keep the system reliable.
+
+Important rules:
+- Do not give vague advice.
+- Make concrete decisions.
+- Push back on bad ideas.
+- Prefer boring, reliable architecture over clever architecture.
+- Assume I will code in VS Code and delegate implementation to Codex.
+- Keep the design modular so I can swap parts later.
+- Highlight tradeoffs.
+- Default to the fastest path to a usable MVP.
+
+Output format:
+1. One-paragraph architecture recommendation
+2. MVP scope for tonight
+3. Folder structure
+4. Google Sheets schema
+5. Google Drive/Docs file strategy
+6. Core modules/services to build
+7. Data flow end-to-end
+8. Suggested prompts for:
+   - fit scoring
+   - insight generation
+   - resume tailoring
+   - cover letter drafting
+9. Risks / limitations
+10. “Build order” checklist for Codex
+
+Before answering, ask yourself what is the smallest system that delivers real value tonight, then optimize for that.

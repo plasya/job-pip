@@ -1,0 +1,105 @@
+certifications:
+
+  - cert_id: cert_oracle_java_se11
+    name: Oracle Certified Professional - Java SE 11 Developer
+    issuer: oracle
+    category: programming_languages
+    skill_tags:
+      - java
+      - object_oriented_programming
+      - backend_development
+      - jvm
+    strength: strong
+    relevance_lanes:
+      - lane_java_spring_backend_fullstack
+
+  - cert_id: cert_oracle_sql
+    name: Oracle SQL Certification
+    issuer: oracle
+    category: databases
+    skill_tags:
+      - sql
+      - relational_databases
+      - query_optimization
+      - joins
+      - indexing
+      - schema_design
+    strength: strong
+    relevance_lanes:
+      - lane_java_spring_backend_fullstack
+      - lane_data_ml_analyst_engineer
+      - lane_py_node_aws_genai_fullstack
+
+  - cert_id: cert_python_michigan
+    name: Python for Everybody Specialization
+    issuer: university_of_michigan
+    platform: coursera
+    category: programming_languages
+    skill_tags:
+      - python
+      - scripting
+      - data_processing
+      - automation
+    strength: strong
+    relevance_lanes:
+      - lane_py_node_aws_genai_fullstack
+      - lane_data_ml_analyst_engineer
+
+  - cert_id: cert_stanford_ml
+    name: Machine Learning Specialization
+    issuer: stanford_university
+    platform: coursera
+    category: machine_learning
+    skill_tags:
+      - supervised_learning
+      - regression
+      - classification
+      - clustering
+      - model_evaluation
+      - feature_engineering
+    strength: strong
+    relevance_lanes:
+      - lane_data_ml_analyst_engineer
+      - lane_py_node_aws_genai_fullstack
+
+  - cert_id: cert_generative_ai
+    name: Generative AI Fundamentals
+    issuer: deeplearning_ai
+    platform: coursera
+    category: generative_ai
+    skill_tags:
+      - llm
+      - transformers
+      - prompt_engineering
+      - generative_models
+      - rag
+    strength: medium
+    relevance_lanes:
+      - lane_py_node_aws_genai_fullstack
+  
+  - cert_id: cert_android_dev
+    name: Mobile App Development with Android
+    issuer: JHUB, JNTU Hyderabad
+    category: mobile_development
+    skill_tags:
+      - android
+      - java
+      - react native
+      - mobile_app_development
+    strength: medium
+    relevance_lanes:
+      - lane_java_spring_backend_fullstack
+
+  - cert_id: cert_KPMG_data_analytics
+    name: Data Analytics Consulting Certification
+    issuer: KPMG
+    category: data_analytics
+    platform: coursera
+    skill_tags:
+      - data_analysis
+      - data_visualization
+      - excel
+      - tableau
+    strength: medium
+    relevance_lanes:
+      - lane_data_ml_analyst_engineer

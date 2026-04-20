@@ -1,0 +1,155 @@
+experience_id: exp_cecert_ucr
+source_type: experience
+
+company: University of California, Riverside
+lab: CE-CERT
+display_name: "CE-CERT, UC Riverside"
+role: Software Engineer
+employment_type: part_time
+
+start_date: 2024-06
+end_date: 2025-03
+is_current: false
+location: USA
+
+domain_tags:
+  - telemetry_processing
+  - research_data_infrastructure
+  - ml_training_data_pipelines
+  - large_scale_data_processing
+  - analytics_workflows
+
+skill_tags:
+  languages:
+    - python
+    - sql
+  cloud:
+    - aws
+    - s3
+    - lambda
+    - glue
+  distributed_processing:
+    - spark
+  data_engineering:
+    - etl
+    - batch_processing
+    - dataset_preparation
+
+architecture_tags:
+  - distributed_batch_processing
+  - telemetry_ingestion_pipeline
+  - aws_data_pipeline_architecture
+  - scalable_dataset_generation
+  - research_data_workflow_design
+
+implementation_tags:
+  - aws_pipeline_development
+  - s3_data_processing
+  - lambda_job_orchestration
+  - glue_etl_jobs
+  - spark_distributed_processing
+  - telemetry_data_transformation
+  - dataset_preparation_for_ml
+  - feature_enrichment_pipeline
+  - experimentation_data_support
+  - batch_processing_pipeline
+  - analytics_workflow_support
+  - research_pipeline_scaling
+
+ownership_tags:
+  - designed
+  - implemented
+  - operated
+  - optimized
+  - collaborated_with_researchers
+  - translated_requirements_to_pipelines
+
+impact_tags:
+  - large_scale_telemetry_processing
+  - distributed_experimentation_support
+  - scalable_dataset_generation
+  - research_workflow_acceleration
+
+scale_metrics:
+  telemetry_records_processed_weekly: 2000000
+
+bullets:
+  - bullet_id: cecert_b1
+    text: "Designed and operated AWS-based distributed batch pipelines using S3, Lambda, and Glue processing ~2M weekly telemetry records."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.18
+      lane_py_node_aws_genai_fullstack: 0.60
+      lane_data_ml_analyst_engineer: 0.96
+    skill_tags:
+      - aws
+      - s3
+      - lambda
+      - glue
+    implementation_tags:
+      - aws_pipeline_development
+      - distributed_batch_processing
+      - telemetry_data_transformation
+    ownership_tags:
+      - designed
+      - operated
+    numeric_evidence:
+      telemetry_records_processed_weekly: 2000000
+    evidence:
+      production: research_production
+      strength: strong
+
+  - bullet_id: cecert_b2
+    text: "Developed Python and SQL workflows supporting ML training data preparation, evaluation pipelines, and signal enrichment."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.12
+      lane_py_node_aws_genai_fullstack: 0.56
+      lane_data_ml_analyst_engineer: 0.92
+    skill_tags:
+      - python
+      - sql
+    implementation_tags:
+      - dataset_preparation_for_ml
+      - feature_enrichment_pipeline
+      - experimentation_data_support
+    ownership_tags:
+      - implemented
+    evidence:
+      production: research_production
+      strength: strong
+
+  - bullet_id: cecert_b3
+    text: "Applied distributed data processing using Spark to enable scalable experimentation workflows across large telemetry datasets."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.20
+      lane_py_node_aws_genai_fullstack: 0.46
+      lane_data_ml_analyst_engineer: 0.95
+    skill_tags:
+      - spark
+    implementation_tags:
+      - spark_distributed_processing
+      - experimentation_data_support
+    ownership_tags:
+      - implemented
+    evidence:
+      production: research_production
+      strength: strong
+
+  - bullet_id: cecert_b4
+    text: "Collaborated with research teams to translate ML experimentation requirements into scalable data transformation pipelines and service workflows."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.18
+      lane_py_node_aws_genai_fullstack: 0.52
+      lane_data_ml_analyst_engineer: 0.88
+    implementation_tags:
+      - research_pipeline_scaling
+      - analytics_workflow_support
+    ownership_tags:
+      - collaborated_with_researchers
+      - translated_requirements_to_pipelines
+    evidence:
+      production: research_production
+      strength: strong
+
+notes:
+  recruiter_summary: "Built AWS-based distributed telemetry processing pipelines and Spark-driven experimentation workflows supporting ML data preparation at research scale."
+  ats_summary: "Strongest supporting experience for data engineering and ML analyst-engineer roles, with secondary relevance to AWS-based backend pipeline engineering."

@@ -1,0 +1,11 @@
+education:
+
+  - degree: master_of_science
+    field: computer_science
+    university: university_of_california_riverside
+    graduation: 2025
+
+  - degree: bachelor_of_technology
+    field: information_technology
+    university: jntu_hyderabad
+    graduation: 2021

@@ -1,0 +1,229 @@
+Core platform
+
+Google Sheets = jobs + applications database
+Google Docs = master resume, tailored resume, cover letter
+Google Drive = folder structure + version history + file copies
+Google Apps Script = orchestration and lightweight automation
+Vertex AI / Gemini through Apps Script = scoring, insights, tailoring
+Slack webhook = “application ready” notifications
+
+Apps Script supports triggers, Google Workspace automation, and now has a Vertex AI advanced service for calling models from script. Google Docs supports atomic batchUpdate, and Drive supports copying files plus revision history, which is great for generating tailored resume docs from a master template while still keeping edit history.
+
+One spreadsheet
+Tabs like:
+jobs_raw
+jobs_scored
+applications
+companies
+settings
+archive_YYYY_WW or 2026_W14
+
+Best pattern:
+
+jobs_raw: every scraped job row appended here
+jobs_scored: same job plus ATS/NLP score + fit labels
+applications: status tracking
+Weekly tabs: filtered snapshot of jobs found that week
+
+
+Do 3 layers, not one giant LLM call:
+
+Layer A — cheap deterministic scoring
+
+Before calling any model, compute:
+
+keyword overlap
+required skill match
+years-of-experience hints
+title similarity
+seniority match
+location / visa / remote constraints
+industry/domain match
+
+You can do this with plain JS in Apps Script or a small Python service. No model needed.
+
+Layer B — profile-aware NLP match
+
+Build a compact profile object:
+
+target roles
+skill clusters
+strongest experiences
+industries
+tools/tech
+leadership level
+geography / work authorization constraints
+
+Then produce:
+
+fit_score
+must_have_missing
+strengths_to_emphasize
+risk_flags
+resume_focus_labels
+
+Layer C — model insights only for shortlisted jobs
+
+Only call the model when deterministic score passes a threshold.
+
+That will save a lot of tokens.
+
+Because Apps Script now supports Vertex AI’s advanced service, you can keep the whole flow inside the Google ecosystem instead of bolting on another orchestration layer.
+
+
+
+
+3) Resume tailoring and cover letter generation
+
+Never rewrite from scratch. Always start from a master resume and apply constrained edits.
+
+That means:
+
+keep a master resume doc
+copy it for each application
+feed the model:
+job description
+your profile summary
+allowed edit rules
+sections allowed to change
+sections not allowed to change
+generate:
+bullet-level edits
+keyword insertions
+summary tweak
+optional cover letter
+
+Then write those changes into a copied Google Doc, not the master.
+
+What to save per application
+
+In Sheets:
+
+application_id
+job_id
+company
+role
+resume_doc_url
+cover_letter_doc_url
+resume_pdf_url
+score
+labels
+version_number
+application_status
+created_at
+
+In Drive folder structure:
+
+/Job Search/
+/Master/
+Master Resume
+Cover Letter Template
+/Applications/2026/2026-W14/Company - Role/
+Resume - Company - Role.docx/pdf
+Cover Letter - Company - Role.docx/pdf
+metadata.json or metadata row in Sheets
+
+4) Autofill / extension / applying on company sites
+
+But for company-specific career pages, the answer is:
+
+partially automated, not fully reliable.
+detect ATS type from URL / page structure
+if supported:
+pre-open application page
+pre-fill known fields through extension/browser automation
+attach generated resume/cover letter
+if unsupported:
+open page
+present “application pack ready”
+let you do final review and submit
+
+
+5) Slack notification that application is ready:
+A perfect message would be:
+
+Company / Role
+Fit score
+Key positioning angle
+Links:
+tailored resume doc
+resume PDF
+cover letter doc
+application page
+button or instruction:
+“Review and Apply”
+
+If you want to stay even more Google-native, I’d seriously consider Google Chat notifications instead of Slack.
+
+---------
+Phase 1 — tonight
+
+Build only this:
+
+A. Scraper ingestion
+
+script fetches jobs from target sites / feeds
+normalize data
+append to jobs_raw
+
+B. Scoring
+
+deterministic match score
+only shortlist jobs above threshold
+optional model insight for shortlisted jobs
+
+C. Resume tailoring
+
+copy master resume doc
+generate constrained edits
+write tailored resume doc
+generate cover letter doc
+
+D. Tracking
+
+save links + metadata in applications sheet
+
+E. Notify
+
+send Slack message: “ready for review”
+
+That is a complete MVP.
+
+Phase 2 — after MVP works
+
+Add:
+
+browser extension / Playwright helper for ATS autofill
+duplicate detection
+retry / logging
+company research enrichment
+interview prep packets
+------
+
+ARCH: 
+Job Sources
+   ↓
+Scraper / Feed Parser
+   ↓
+Google Sheets: jobs_raw
+   ↓
+Deterministic ATS/NLP scorer
+   ↓
+Google Sheets: jobs_scored
+   ↓
+LLM insight generator (only shortlisted jobs)
+   ↓
+Tailoring engine
+   ├─ copy Master Resume in Google Docs
+   ├─ update tailored resume
+   └─ draft cover letter
+   ↓
+Google Drive folder per application
+   ↓
+Google Sheets: applications tracker
+   ↓
+Slack notification: ready for review
+   ↓
+Manual review + apply
+-------
+Google Apps Script + Sheets + Docs + Drive + Slack webhook

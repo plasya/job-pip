@@ -1,0 +1,142 @@
+project_id: proj_job_pipeline
+source_type: project
+
+title: AI Job Search Pipeline and ATS Match Engine
+type: automation_platform_project
+
+repo: ""
+
+domain_tags:
+  - job_search_automation
+  - ats_matching
+  - resume_tailoring
+  - workflow_automation
+
+skill_tags:
+  languages:
+    - python
+    - sql
+  storage:
+    - sqlite
+    - yaml
+    - json
+  ingestion:
+    - greenhouse
+    - lever
+    - workday
+  ai_stack:
+    - llm_scoring
+    - semantic_matching
+    - keyword_extraction
+    - resume_tailoring
+  infrastructure:
+    - batch_processing
+
+implementation_tags:
+  - ats_job_ingestion
+  - job_normalization
+  - requirement_extraction
+  - semantic_tag_matching
+  - candidate_profile_scoring
+  - resume_knowledge_base_design
+  - bullet_level_resume_selection
+  - deduplication
+  - job_tracking
+  - rule_based_scoring_engine
+
+ownership_tags:
+  - designed
+  - implemented
+  - normalized
+  - scored
+  - automated
+
+architecture_tags:
+  - multi_source_ingestion_pipeline
+  - resume_knowledge_base_architecture
+  - hybrid_rule_plus_llm_scoring
+  - bullet_level_tailoring_design
+
+impact_tags:
+  - job_search_scaling
+  - ats_alignment_automation
+  - reusable_resume_intelligence
+  - application_workflow_acceleration
+
+bullets:
+  - bullet_id: jp_b1
+    text: "Designed a multi-source ingestion pipeline to collect and normalize job descriptions from ATS platforms including Greenhouse, Lever, and Workday."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.26
+      lane_py_node_aws_genai_fullstack: 0.88
+      lane_data_ml_analyst_engineer: 0.56
+    skill_tags:
+      - python
+      - greenhouse
+      - lever
+      - workday
+    implementation_tags:
+      - ats_job_ingestion
+      - job_normalization
+    ownership_tags:
+      - designed
+      - implemented
+
+  - bullet_id: jp_b2
+    text: "Built a rule-based and semantic scoring engine that compares normalized job requirements against a structured candidate knowledge base and tagged resume evidence."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.32
+      lane_py_node_aws_genai_fullstack: 0.92
+      lane_data_ml_analyst_engineer: 0.74
+    skill_tags:
+      - llm_scoring
+      - semantic_matching
+      - yaml
+      - json
+    implementation_tags:
+      - candidate_profile_scoring
+      - semantic_tag_matching
+      - rule_based_scoring_engine
+      - resume_knowledge_base_design
+    ownership_tags:
+      - designed
+      - automated
+
+  - bullet_id: jp_b3
+    text: "Created a bullet-level resume tailoring workflow that selects evidence by target lane and job match instead of regenerating resumes from scratch."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.28
+      lane_py_node_aws_genai_fullstack: 0.90
+      lane_data_ml_analyst_engineer: 0.60
+    implementation_tags:
+      - bullet_level_resume_selection
+      - resume_tailoring
+      - resume_knowledge_base_design
+    ownership_tags:
+      - designed
+      - implemented
+
+  - bullet_id: jp_b4
+    text: "Implemented job deduplication, structured storage, and tracking workflows using lightweight persistence layers for shortlist and review automation."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.36
+      lane_py_node_aws_genai_fullstack: 0.80
+      lane_data_ml_analyst_engineer: 0.68
+    skill_tags:
+      - sqlite
+      - sql
+    implementation_tags:
+      - deduplication
+      - job_tracking
+    ownership_tags:
+      - implemented
+      - automated
+
+evidence_strength:
+  independence: high
+  production_like: medium
+  research_depth: medium
+  system_complexity: high
+
+notes:
+  recruiter_summary: "Strong automation and applied AI systems project combining ATS ingestion, structured matching, scoring logic, and bullet-level resume tailoring."

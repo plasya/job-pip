@@ -1,0 +1,140 @@
+project_id: proj_scholarship_management
+source_type: project
+
+title: Scholarship Management System
+type: backend_fullstack_project
+
+repo: "https://github.com/veerasai/ScholarshipProjectGladiator.git"
+
+domain_tags:
+  - education
+  - workflow_management
+  - role_based_access
+  - application_processing
+
+skill_tags:
+  languages:
+    - java
+    - sql
+    - javascript
+  frameworks:
+    - spring_boot
+    - jpa
+    - hibernate
+    - nodejs
+    - react
+    - angular
+  databases:
+    - oracle
+    - mysql
+  api:
+    - rest_api
+    - jwt
+  deployment:
+    - docker
+
+implementation_tags:
+  - backend_service_development
+  - role_based_access_control
+  - jwt_authentication
+  - rest_api_design
+  - approval_workflow_implementation
+  - relational_schema_design
+  - multi_role_application_workflows
+  - frontend_backend_integration
+  - query_optimization
+  - multi_user_workflow_handling
+
+ownership_tags:
+  - designed
+  - implemented
+  - integrated
+  - optimized
+
+architecture_tags:
+  - three_tier_architecture
+  - layered_backend_design
+  - multi_role_system_design
+  - approval_pipeline_design
+
+impact_tags:
+  - workflow_digitization
+  - role_based_process_automation
+  - multi_entity_data_management
+
+bullets:
+  - bullet_id: sch_b1
+    text: "Designed and implemented a layered Spring Boot backend for scholarship onboarding, application processing, and approval workflows across 3 user roles."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.97
+      lane_py_node_aws_genai_fullstack: 0.12
+      lane_data_ml_analyst_engineer: 0.10
+    skill_tags:
+      - java
+      - spring_boot
+      - rest_api
+    implementation_tags:
+      - backend_service_development
+      - approval_workflow_implementation
+      - multi_role_application_workflows
+    ownership_tags:
+      - designed
+      - implemented
+
+  - bullet_id: sch_b2
+    text: "Built JWT-secured APIs and role-based access controls for students, institutions, and state-level review workflows."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.95
+      lane_py_node_aws_genai_fullstack: 0.14
+      lane_data_ml_analyst_engineer: 0.06
+    skill_tags:
+      - jwt
+      - rest_api
+    implementation_tags:
+      - jwt_authentication
+      - role_based_access_control
+    ownership_tags:
+      - implemented
+
+  - bullet_id: sch_b3
+    text: "Modeled a multi-entity relational schema spanning student, academic, family, financial, and institution data to support complex application workflows."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.86
+      lane_py_node_aws_genai_fullstack: 0.10
+      lane_data_ml_analyst_engineer: 0.34
+    skill_tags:
+      - sql
+      - oracle
+      - mysql
+    implementation_tags:
+      - relational_schema_design
+      - multi_role_application_workflows
+    ownership_tags:
+      - designed
+
+  - bullet_id: sch_b4
+    text: "Integrated frontend flows with backend services and optimized query-driven operations for responsive multi-user application handling."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.84
+      lane_py_node_aws_genai_fullstack: 0.22
+      lane_data_ml_analyst_engineer: 0.12
+    skill_tags:
+      - react
+      - angular
+      - nodejs
+    implementation_tags:
+      - frontend_backend_integration
+      - query_optimization
+      - multi_user_workflow_handling
+    ownership_tags:
+      - integrated
+      - optimized
+
+evidence_strength:
+  independence: medium
+  production_like: medium
+  research_depth: low
+  system_complexity: high
+
+notes:
+  recruiter_summary: "Strong Java/Spring workflow system showing backend architecture, JWT security, multi-role workflow handling, and complex relational schema design."

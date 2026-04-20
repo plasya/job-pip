@@ -1,0 +1,57 @@
+backend_java:
+  role_terms:
+    - backend engineer
+    - distributed systems engineer
+    - java developer
+    - senior java engineer
+  stack_terms:
+    - java
+    - spring boot
+    - kafka
+    - microservices
+    - hibernate
+  ats_domains:
+    - boards.greenhouse.io
+    - jobs.lever.co
+    - apply.workable.com
+    - jobs.smartrecruiters.com
+
+backend_ai:
+  role_terms:
+    - ai engineer
+    - machine learning engineer
+    - ml engineer
+    - ai/ml engineer
+    - deep learning engineer
+  stack_terms:
+    - python
+    - tensorflow
+    - pytorch
+    - scikit-learn
+    - jupyter
+    - kubernetes
+  ats_domains:
+    - boards.greenhouse.io
+    - jobs.lever.co
+    - apply.workable.com
+    - jobs.smartrecruiters.com
+
+data_ml:
+  role_terms:
+    - data scientist
+    - data engineer
+    - ml engineer
+    - analytics engineer
+    - data analyst
+  stack_terms:
+    - python
+    - sql
+    - spark
+    - pandas
+    - numpy
+    - airflow
+  ats_domains:
+    - boards.greenhouse.io
+    - jobs.lever.co
+    - apply.workable.com
+    - jobs.smartrecruiters.com

@@ -1,0 +1,309 @@
+experience_id: exp_ltimindtree_citi
+source_type: experience
+
+company: LTIMindTree
+client: Citi Bank
+display_name: "Citi Bank (via LTIMindTree)"
+role: Software Engineer
+employment_type: full_time
+
+start_date: 2021-08
+end_date: 2023-07
+is_current: false
+location: India
+
+domain_tags:
+  - fintech
+  - banking
+  - compliance
+  - kyc
+  - regulatory_workflows
+  - enterprise_data_processing
+
+skill_tags:
+  languages:
+    - java
+    - sql
+    - plsql
+  frameworks:
+    - spring_boot
+  databases:
+    - oracle
+  messaging:
+    - kafka
+  devops:
+    - docker
+    - jenkins
+    - tomcat
+    - maven
+  collaboration_tools:
+    - confluence
+    - service_now
+  frontend_exposure:
+    - angular
+    - react
+
+implementation_tags:
+  - backend_service_development
+  - microservice_development
+  - rest_api_design
+  - rest_api_implementation
+  - service_layer_design
+  - api_versioning
+  - backward_compatibility_support
+  - database_query_optimization
+  - plsql_procedure_development
+  - indexing_strategy_optimization
+  - execution_plan_analysis
+  - event_driven_processing
+  - schema_migration
+  - schema_evolution
+  - etl_alignment
+  - data_transformation
+  - batch_job_optimization
+  - cross_service_integration
+  - production_bug_resolution
+  - incident_debugging
+  - root_cause_analysis
+  - regression_testing
+  - integration_testing
+  - release_validation
+  - ci_cd_pipeline_support
+  - technical_documentation
+  - api_documentation
+  - release_documentation
+  - confluence_documentation
+  - data_consistency_validation
+
+ownership_tags:
+  - designed
+  - implemented
+  - developed
+  - maintained
+  - optimized
+  - led
+  - migrated
+  - validated
+  - stabilized
+  - debugged
+  - integrated
+  - documented
+  - supported_production
+  - coordinated_release_rollout
+  - resolved_incidents
+
+architecture_tags:
+  - microservices_architecture
+  - event_driven_architecture
+  - distributed_processing
+  - service_oriented_design
+  - enterprise_backend_systems
+  - multi_service_coordination
+  - batch_pipeline_execution
+  - reconciliation_processing
+  - api_contract_design
+  - schema_versioning
+
+impact_tags:
+  - large_scale_data_migration
+  - enterprise_customer_records_processing
+  - high_volume_batch_processing
+  - cross_system_data_dependencies
+  - downstream_system_stabilization
+  - multi_environment_release_pipeline
+  - compliance_workflow_execution
+
+scale_metrics:
+  records_migrated: 1200000
+  microservices_supported: 10
+  downstream_integrations: 17
+  transactions_per_day: 15000
+
+environment_tags:
+  - agile_development
+  - qa_coordination
+  - etl_team_collaboration
+  - stakeholder_alignment
+  - defect_triage
+  - release_cycles
+  - uat_support
+  - sit_support
+  - production_support
+
+bullets:
+  - bullet_id: citi_b1
+    text: "Developed and maintained Java Spring Boot microservices supporting enterprise banking, compliance, and KYC workflows across 10+ backend services."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.96
+      lane_py_node_aws_genai_fullstack: 0.10
+      lane_data_ml_analyst_engineer: 0.28
+    skill_tags:
+      - java
+      - spring_boot
+      - microservices
+    implementation_tags:
+      - backend_service_development
+      - microservice_development
+    ownership_tags:
+      - developed
+      - maintained
+    domain_tags:
+      - banking
+      - compliance
+      - kyc
+    evidence:
+      production: true
+      strength: strong
+
+  - bullet_id: citi_b2
+    text: "Led large-scale migration and schema evolution of 1.2M+ customer records across compliance systems, aligning transformations with ETL workflows and downstream dependencies."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.72
+      lane_py_node_aws_genai_fullstack: 0.08
+      lane_data_ml_analyst_engineer: 0.84
+    skill_tags:
+      - sql
+      - oracle
+      - etl
+    implementation_tags:
+      - schema_migration
+      - schema_evolution
+      - data_transformation
+      - etl_alignment
+    ownership_tags:
+      - led
+      - migrated
+    impact_tags:
+      - large_scale_data_migration
+    numeric_evidence:
+      records_migrated: 1200000
+    evidence:
+      production: true
+      strength: strong
+
+  - bullet_id: citi_b3
+    text: "Designed and implemented versioned REST APIs with backward compatibility support for stable cross-service integration in enterprise backend systems."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.94
+      lane_py_node_aws_genai_fullstack: 0.18
+      lane_data_ml_analyst_engineer: 0.22
+    skill_tags:
+      - java
+      - spring_boot
+      - rest_api
+    implementation_tags:
+      - rest_api_design
+      - rest_api_implementation
+      - api_versioning
+      - backward_compatibility_support
+      - cross_service_integration
+    ownership_tags:
+      - designed
+      - implemented
+    architecture_tags:
+      - api_contract_design
+    evidence:
+      production: true
+      strength: strong
+
+  - bullet_id: citi_b4
+    text: "Implemented event-driven processing using Apache Kafka and debugged reconciliation failures across 17 downstream integrations to stabilize data flows."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.88
+      lane_py_node_aws_genai_fullstack: 0.12
+      lane_data_ml_analyst_engineer: 0.63
+    skill_tags:
+      - kafka
+    implementation_tags:
+      - event_driven_processing
+      - incident_debugging
+      - root_cause_analysis
+    ownership_tags:
+      - implemented
+      - debugged
+      - stabilized
+    architecture_tags:
+      - event_driven_architecture
+      - distributed_processing
+    numeric_evidence:
+      downstream_integrations: 17
+    evidence:
+      production: true
+      strength: strong
+
+  - bullet_id: citi_b5
+    text: "Optimized Oracle PL/SQL procedures, indexing strategies, and batch execution logic to improve runtime efficiency of large-scale compliance processing jobs."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.82
+      lane_py_node_aws_genai_fullstack: 0.05
+      lane_data_ml_analyst_engineer: 0.86
+    skill_tags:
+      - oracle
+      - sql
+      - plsql
+    implementation_tags:
+      - plsql_procedure_development
+      - database_query_optimization
+      - indexing_strategy_optimization
+      - batch_job_optimization
+      - execution_plan_analysis
+    ownership_tags:
+      - optimized
+    impact_tags:
+      - high_volume_batch_processing
+    evidence:
+      production: true
+      strength: strong
+
+  - bullet_id: citi_b6
+    text: "Supported CI/CD-driven release validation across SIT, UAT, and production environments, validating fixes through regression and integration testing."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.74
+      lane_py_node_aws_genai_fullstack: 0.16
+      lane_data_ml_analyst_engineer: 0.26
+    skill_tags:
+      - jenkins
+      - docker
+      - tomcat
+      - maven
+    implementation_tags:
+      - ci_cd_pipeline_support
+      - release_validation
+      - regression_testing
+      - integration_testing
+    ownership_tags:
+      - validated
+      - supported_production
+      - coordinated_release_rollout
+    environment_tags:
+      - sit_support
+      - uat_support
+      - production_support
+    evidence:
+      production: true
+      strength: medium
+
+  - bullet_id: citi_b7
+    text: "Authored technical, API, and release documentation in Confluence and tracked incidents through ServiceNow to support deployment traceability and issue resolution."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.62
+      lane_py_node_aws_genai_fullstack: 0.08
+      lane_data_ml_analyst_engineer: 0.18
+    skill_tags:
+      - confluence
+      - service_now
+    implementation_tags:
+      - technical_documentation
+      - api_documentation
+      - release_documentation
+      - confluence_documentation
+    ownership_tags:
+      - documented
+      - resolved_incidents
+    evidence:
+      production: true
+      strength: medium
+
+notes:
+  recruiter_summary: "Strong enterprise backend experience in Java/Spring Boot microservices with migration, API versioning, Kafka-based integration, Oracle performance tuning, documentation, and production support."
+  ats_summary: "Best supported bullets cluster around Java/Spring backend full-stack, with secondary data/ML analyst-engineer support through migration, ETL alignment, and batch/data workflow evidence."

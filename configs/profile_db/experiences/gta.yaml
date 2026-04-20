@@ -1,0 +1,131 @@
+experience_id: exp_ucr_gta_reader
+source_type: experience
+
+company: University of California, Riverside
+department: Bourns College of Engineering
+display_name: "Bourns College of Engineering, UC Riverside"
+role: "Graduate Teaching Assistant / Reader"
+employment_type: part_time
+
+start_date: 2024-09
+end_date: 2025-03
+is_current: false
+location: USA
+
+domain_tags:
+  - computer_science_education
+  - algorithms
+  - data_structures
+  - concurrency
+  - software_engineering_foundations
+
+skill_tags:
+  languages:
+    - java
+    - python
+  cs_core:
+    - data_structures
+    - algorithms
+    - concurrency
+  tooling:
+    - debugging
+    - code_review
+
+implementation_tags:
+  - assignment_evaluation
+  - code_review_support
+  - debugging_assistance
+  - technical_instruction_support
+  - student_mentoring
+  - performance_feedback_delivery
+  - correctness_validation
+
+ownership_tags:
+  - reviewed
+  - evaluated
+  - mentored
+  - debugged
+  - instructed
+  - supported_course_delivery
+
+environment_tags:
+  - academic_instruction
+  - one_on_one_support
+  - group_session_support
+  - grading_pipeline_execution
+
+impact_tags:
+  - large_scale_assignment_review
+  - student_learning_support
+  - correctness_enforcement
+
+scale_metrics:
+  assignments_reviewed: 220
+  students_supported: 120
+  technical_sessions_led: 15
+
+
+bullets:
+
+  - bullet_id: gta_b1
+    text: "Reviewed and evaluated 220+ Java and Python assignments covering data structures, algorithms, and concurrency concepts."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.52
+      lane_py_node_aws_genai_fullstack: 0.34
+      lane_data_ml_analyst_engineer: 0.28
+    skill_tags:
+      - java
+      - python
+      - data_structures
+      - algorithms
+      - concurrency
+    implementation_tags:
+      - assignment_evaluation
+      - correctness_validation
+    ownership_tags:
+      - reviewed
+      - evaluated
+    numeric_evidence:
+      assignments_reviewed: 220
+    evidence:
+      production: academic_instruction
+      strength: medium
+
+  - bullet_id: gta_b2
+    text: "Conducted debugging sessions helping students resolve logic, performance, and concurrency-related implementation issues."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.58
+      lane_py_node_aws_genai_fullstack: 0.40
+      lane_data_ml_analyst_engineer: 0.30
+    skill_tags:
+      - debugging
+      - concurrency
+    implementation_tags:
+      - debugging_assistance
+      - performance_feedback_delivery
+    ownership_tags:
+      - debugged
+      - mentored
+    evidence:
+      production: academic_instruction
+      strength: medium
+
+  - bullet_id: gta_b3
+    text: "Led technical support sessions translating system-level algorithm and concurrency concepts into practical implementation strategies."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.50
+      lane_py_node_aws_genai_fullstack: 0.38
+      lane_data_ml_analyst_engineer: 0.35
+    implementation_tags:
+      - technical_instruction_support
+      - student_mentoring
+    ownership_tags:
+      - instructed
+      - mentored
+    evidence:
+      production: academic_instruction
+      strength: medium
+
+notes:
+  recruiter_summary: "Supported instruction for data structures, algorithms, and concurrency courses through large-scale assignment evaluation, debugging assistance, and technical mentoring."
+  ats_summary: "Provides supporting evidence of strong CS fundamentals, debugging ability, and concurrency knowledge relevant to backend engineering roles."

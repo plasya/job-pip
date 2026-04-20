@@ -1,0 +1,42 @@
+candidate_id: lasya_p
+
+target_roles:
+  - software_engineer_backend
+  - genai_engineer
+  - data_engineer
+  - ml_engineer
+
+target_lanes:
+  primary:
+    - lane_java_spring_backend_fullstack
+    - lane_py_node_aws_genai_fullstack
+  secondary:
+    - lane_data_ml_analyst_engineer
+
+seniority_level: early_career
+
+work_authorization:
+  country: united_states
+  sponsorship_required: true
+
+target_locations:
+  - united_states_remote
+  - california
+  - texas
+  - washington
+  - new_york
+  - remote
+
+preferred_domains:
+  - ai_platforms
+  - developer_tools
+  - fintech
+  - analytics_systems
+  - cloud_infrastructure
+
+hard_constraints:
+  - visa_sponsorship_required
+
+soft_constraints:
+  - backend_heavy_roles_preferred
+  - production_systems_preferred

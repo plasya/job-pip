@@ -1,0 +1,40 @@
+bay_area:
+  - "San Francisco, CA"
+  - "Silicon Valley, CA"
+  - "Palo Alto, CA"
+  - "Mountain View, CA"
+  - "San Jose, CA"
+
+los_angeles:
+  - "Los Angeles, CA"
+  - "Santa Monica, CA"
+  - "Beverly Hills, CA"
+  - "Culver City, CA"
+
+chicago:
+  - "Chicago, IL"
+  - "Evanston, IL"
+  - "Oak Park, IL"
+
+virginia_dc:
+  - "Washington, DC"
+  - "Arlington, VA"
+  - "Alexandria, VA"
+  - "Reston, VA"
+  - "McLean, VA"
+
+remote:
+  - "remote"
+  - "work from home"
+  - "telecommute"
+
+california_major_cities:
+  - "san francisco"
+  - "san jose"
+  - "mountain view"
+  - "palo alto"
+  - "sunnyvale"
+  - "los angeles"
+  - "irvine"
+  - "san diego"
+  - "santa monica"

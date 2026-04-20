@@ -1,0 +1,135 @@
+project_id: proj_hai_training_analytics_agent
+source_type: project
+
+title: Hai – AI Agent for Training Analytics
+type: applied_ai_backend_project
+
+repo: https://github.com/plasya/hai-ai-training-agent.git
+
+summary: >
+  Built an analytics-backed AI agent that explains strength progress, fatigue,
+  and recovery trends using structured PostgreSQL feature pipelines and
+  tool-routed LLM orchestration instead of raw-table reasoning.
+
+lane_fit:
+  lane_java_spring_backend_fullstack: 0.28
+  lane_py_node_aws_genai_fullstack: 0.96
+  lane_data_ml_analyst_engineer: 0.78
+
+tech_stack:
+
+  languages:
+    - python
+
+  databases:
+    - postgresql
+
+  ai_stack:
+    - llm_tool_calling
+    - structured_prompting
+    - constrained_agent_design
+
+  infra:
+    - docker
+
+  analytics:
+    - feature_engineering
+    - time_series_analysis
+    - strength_progression_metrics
+    - fatigue_modeling
+
+capabilities:
+
+  - analytics_pipeline_design
+  - feature_table_generation
+  - agent_tool_routing
+  - structured_llm_reasoning
+  - recovery_signal_modeling
+  - time_window_comparison
+  - schema_validated_tool_outputs
+  - confidence_aware_ai_outputs
+  - metrics_service_architecture
+  - ingestion_pipeline_design
+
+architecture:
+
+  - layered_data_pipeline_architecture
+  - analytics_feature_store_design
+  - constrained_llm_agent_pattern
+  - tool_registry_pattern
+  - deterministic_tool_execution_layer
+  - api_first_agent_interface
+  - postgres_source_of_truth_model
+  - modular_feature_pipeline_design
+
+ownership:
+
+  - designed
+  - implemented
+  - evaluated
+  - orchestrated
+  - deployed_locally
+  - documented_architecture
+
+impact_signals:
+
+  - analytics_backed_llm_reasoning
+  - confidence_aware_agent_outputs
+  - structured_training_load_modeling
+  - recovery_signal_interpretation_pipeline
+  - multi_source_health_data_integration
+
+bullets:
+
+  - bullet_id: hai_b1
+    text: >
+      Designed a layered analytics pipeline ingesting Hevy workouts and Apple
+      Health recovery data into PostgreSQL feature tables supporting strength,
+      fatigue, and readiness modeling.
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.22
+      lane_py_node_aws_genai_fullstack: 0.88
+      lane_data_ml_analyst_engineer: 0.92
+
+  - bullet_id: hai_b2
+    text: >
+      Implemented a constrained tool-calling agent that routes user questions to
+      allowlisted analytics functions instead of querying raw tables directly,
+      improving reliability and interpretability of LLM outputs.
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.18
+      lane_py_node_aws_genai_fullstack: 0.96
+      lane_data_ml_analyst_engineer: 0.64
+
+  - bullet_id: hai_b3
+    text: >
+      Built feature-engineering pipelines computing ACWR, training load windows,
+      PR detection, and recovery deltas for downstream analytics services.
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.26
+      lane_py_node_aws_genai_fullstack: 0.84
+      lane_data_ml_analyst_engineer: 0.95
+
+  - bullet_id: hai_b4
+    text: >
+      Developed structured analytics tool interfaces returning confidence scores,
+      coverage flags, and deterministic payload schemas for safe LLM interpretation.
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.24
+      lane_py_node_aws_genai_fullstack: 0.94
+      lane_data_ml_analyst_engineer: 0.82
+
+  - bullet_id: hai_b5
+    text: >
+      Exposed analytics capabilities through a lightweight API layer enabling
+      agent-driven strength progress comparison, fatigue snapshots, and recovery trend queries.
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.40
+      lane_py_node_aws_genai_fullstack: 0.90
+      lane_data_ml_analyst_engineer: 0.70
+
+evidence_strength:
+  independence: high
+  production_like: high
+  research_depth: high
+  system_complexity: high

@@ -1,0 +1,61 @@
+languages:
+  primary:
+    - java
+    - python
+    - sql
+  secondary:
+    - javascript
+    - typescript
+    - c++
+    - php
+
+backend:
+  - spring_boot
+  - nodejs
+  - express
+  - flask
+  - rest_api
+  - microservices
+
+frontend:
+  - react
+  - angular
+  - html
+  - css
+
+cloud:
+  - aws
+  - ec2
+  - lambda
+  - s3
+
+data_engineering:
+  - spark
+  - hadoop
+  - etl
+  - batch_processing
+
+databases:
+  - postgresql
+  - oracle
+  - mysql
+  - mongodb
+  - bigquery
+  - firebase
+
+ml_ai:
+  - pytorch
+  - tensorflow
+  - scikit_learn
+  - transformers
+  - rag
+  - vector_search
+  - llm_tooling
+
+devops:
+  - docker
+  - kubernetes
+  - terraform
+  - ci_cd
+  - jenkins
+  - gitlab

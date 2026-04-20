@@ -1,0 +1,299 @@
+Module 1: Source discovery
+What it does
+
+This replaces your current n8n Serper step.
+
+Input:
+
+search query preset
+source scopes like greenhouse, lever
+max results per source
+
+Output:
+
+list of candidate job links with minimal metadata:
+source
+title
+url
+snippet
+discovered_at
+query_used
+Why keep it
+
+Your current flow already shows the pattern:
+
+one query
+multiple source-specific searches
+merged result set
+What changes in Python
+
+Create:
+
+discover/serper_client.py
+discover/query_builder.py
+discover/source_search.py
+Responsibilities
+
+query_builder.py
+
+stores reusable search presets
+expands query by role families
+appends source scopes like site:boards.greenhouse.io
+
+serper_client.py
+
+raw API client
+rate limiting
+retries
+environment variable for API key
+
+source_search.py
+
+runs query across sources
+returns standardized DiscoveredLink objects
+Important pushback
+
+Do not score anything here.
+Do not write directly to Sheets/Notion here.
+This module should only discover links.
+
+Module 2: Job fetch + normalization
+
+This is the first real missing piece in your current flow.
+
+Right now you only store:
+
+title
+url
+snippet
+source
+query
+
+That is not enough for ATS scoring.
+
+What it does
+
+Given a job URL, fetch the actual posting content and normalize it.
+
+Input:
+
+DiscoveredLink
+
+Output:
+
+NormalizedJob
+
+Fields:
+
+job_id
+source
+company
+title
+location
+remote_type
+employment_type
+job_url
+apply_url
+description_raw
+description_text
+requirements
+preferred_qualifications
+posted_date
+salary_text
+dedupe_key
+ingested_at
+Submodules
+fetchers/greenhouse.py
+fetchers/lever.py
+fetchers/generic_page.py
+normalize/parser.py
+normalize/models.py
+Architecture decision
+
+Use source-specific fetchers first, generic fallback second.
+
+That means:
+
+if URL matches Greenhouse, use Greenhouse fetcher
+if URL matches Lever, use Lever fetcher
+else use generic HTML fetcher
+
+This is the right boring design.
+
+Why this matters
+
+ATS scoring depends on:
+
+real requirements
+role wording
+seniority
+tech stack
+constraints like visa/remote/location
+
+You cannot do that reliably from a search snippet.
+
+Module 3: Deduplication + storage
+
+This is where you build your local truth store.
+
+What it does
+
+Persists jobs and prevents duplicates from repeated runs.
+
+Input:
+
+NormalizedJob
+
+Output:
+
+stored job row / JSON record
+Storage choice
+
+For MVP:
+
+SQLite for metadata + statuses
+filesystem for per-job JSON snapshots
+
+This is better than starting with Sheets as your only database.
+
+Why
+local and fast
+easier to query/debug on your server
+later sync to Sheets is easy
+avoids using Sheets as a transactional backend
+Tables
+jobs
+job_id
+dedupe_key
+source
+company
+title
+location
+job_url
+apply_url
+description_text
+posted_date
+discovered_at
+ingested_at
+status
+job_runs
+run_id
+query_name
+source
+started_at
+finished_at
+num_found
+num_new
+num_duplicates
+applications
+application_id
+job_id
+score_total
+score_stage
+shortlisted
+packet_path
+resume_path
+cover_letter_path
+status
+updated_at
+
+Module 5: LLM insights layer
+
+Only runs for shortlisted or borderline jobs.
+
+Your prior design already says: deterministic first, model only for shortlisted jobs. That is exactly right.
+
+What it does
+
+Input:
+
+compact normalized job
+compact candidate profile
+ATS rule score output
+
+Output:
+
+strengths_to_emphasize
+gaps_to_address
+summary_angle
+bullet_focus
+interview_hooks optional
+Key decision
+
+This module must be bounded.
+
+Do not send the entire resume and full JD blindly every time.
+Instead build a compact prompt packet:
+
+job summary
+extracted requirements
+candidate fact summary
+component scores
+missing gaps
+target output JSON only
+
+That keeps token usage low.
+
+Module 6: Artifact generation
+
+This aligns with your earlier requirement for review-ready application packets rather than auto-submit bots.
+
+Outputs per job
+normalized_job.json
+score.json
+insights.json
+tailored_resume.md
+cover_letter.md
+metadata.json
+
+Exactly the structure you wanted.
+
+Internal submodules
+artifacts/packet_builder.py
+artifacts/resume_tailor.py
+artifacts/cover_letter.py
+artifacts/metadata.py
+Important product rule
+
+Resume tailoring should produce:
+
+summary tweaks
+bullet edit suggestions
+keyword insertions
+optional ordering suggestions
+
+Not a hallucinated brand-new resume from scratch. Your earlier prompt is very clear on this and it is the correct constraint.
+
+Module 7: Tracking + notification
+
+Your n8n proof-of-concept writes to Notion. Long term, I would not keep that.
+
+Your desired system is closer to:
+
+local server truth
+optional Google Sheets sync
+optional Drive sync
+optional webhook notification
+For MVP
+
+Tracking should be:
+
+SQLite
+filesystem packet folders
+optional CSV export
+optional Sheets sync adapter
+Notification
+
+Just a tiny interface:
+
+notifiers/webhook.py
+later notifiers/google_chat.py or notifiers/slack.py
+
+Send:
+
+company
+role
+score
+summary angle
+packet path
+job URL

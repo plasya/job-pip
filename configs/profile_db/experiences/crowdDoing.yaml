@@ -1,0 +1,226 @@
+experience_id: exp_crowddoing_naturecounter
+source_type: experience
+
+company: CrowdDoing
+project: NatureCounter
+display_name: "CrowdDoing (NatureCounter)"
+role: Software Engineer
+employment_type: contract
+
+start_date: 2025-08
+end_date: present
+is_current: true
+location: USA
+
+domain_tags:
+  - genai
+  - analytics_systems
+  - health_data_processing
+  - structured_signal_generation
+  - workflow_automation
+
+skill_tags:
+  languages:
+    - python
+    - javascript
+    - typescript
+  frameworks:
+    - nodejs
+    - express
+  ai_stack:
+    - openai
+    - llm
+    - langchain
+  databases:
+    - mongodb
+  devops:
+    - docker
+    - github_actions
+  api:
+    - rest_api
+    - json_schema_validation
+    - oauth2
+    - jwt
+    - openapi
+
+architecture_tags:
+  - backend_service_orchestration
+  - llm_pipeline_architecture
+  - structured_output_generation
+  - schema_contract_enforcement
+  - concurrent_request_processing
+  - modular_service_design
+  - analytics_pipeline_support
+  - workflow_coordination
+
+implementation_tags:
+  - backend_service_development
+  - rest_api_design
+  - rest_api_implementation
+  - json_schema_validation
+  - llm_pipeline_integration
+  - prompt_execution_coordination
+  - structured_output_validation
+  - downstream_service_integration
+  - mongodb_query_optimization
+  - indexing_strategy_optimization
+  - containerized_deployment
+  - ci_cd_pipeline_support
+  - secure_api_development
+  - authentication_integration
+  - workflow_automation
+  - analytics_data_transformation
+
+ownership_tags:
+  - owned_modules_end_to_end
+  - designed
+  - implemented
+  - optimized
+  - productionized
+  - validated
+  - integrated
+  - collaborated_cross_functionally
+  - defined_api_contracts
+
+impact_tags:
+  - production_llm_pipeline_deployment
+  - analytics_workflow_enablement
+  - schema_contract_standardization
+  - backend_latency_reduction
+  - automation_of_manual_processing
+
+scale_metrics:
+  active_users_supported: 500
+  latency_reduction_seconds: 1.2
+
+environment_tags:
+  - cross_team_collaboration
+  - analytics_team_coordination
+  - workflow_design_support
+  - release_cycle_participation
+
+bullets:
+  - bullet_id: nc_b1
+    text: "Owned end-to-end development of Node.js (Express) backend modules supporting analytics workflows for 500+ active users."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.30
+      lane_py_node_aws_genai_fullstack: 0.90
+      lane_data_ml_analyst_engineer: 0.42
+    skill_tags:
+      - nodejs
+      - express
+    implementation_tags:
+      - backend_service_development
+      - modular_service_design
+    ownership_tags:
+      - owned_modules_end_to_end
+    numeric_evidence:
+      active_users_supported: 500
+    evidence:
+      production: true
+      strength: strong
+
+  - bullet_id: nc_b2
+    text: "Designed and productionized LLM-integrated backend pipelines coordinating prompt execution, response validation, and structured output generation for downstream services."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.18
+      lane_py_node_aws_genai_fullstack: 0.96
+      lane_data_ml_analyst_engineer: 0.72
+    skill_tags:
+      - llm
+      - openai
+      - langchain
+    implementation_tags:
+      - llm_pipeline_integration
+      - prompt_execution_coordination
+      - structured_output_validation
+    ownership_tags:
+      - designed
+      - productionized
+    architecture_tags:
+      - llm_pipeline_architecture
+      - structured_output_generation
+    evidence:
+      production: true
+      strength: strong
+
+  - bullet_id: nc_b3
+    text: "Defined REST API contracts and enforced JSON schema validation to ensure consistency across multi-stage analytics workflows."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.42
+      lane_py_node_aws_genai_fullstack: 0.88
+      lane_data_ml_analyst_engineer: 0.48
+    skill_tags:
+      - rest_api
+      - json_schema_validation
+    implementation_tags:
+      - rest_api_design
+      - json_schema_validation
+      - schema_contract_enforcement
+    ownership_tags:
+      - defined_api_contracts
+    evidence:
+      production: true
+      strength: strong
+
+  - bullet_id: nc_b4
+    text: "Optimized MongoDB aggregation pipelines and indexing strategies reducing average API latency by ~1.2 seconds."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.34
+      lane_py_node_aws_genai_fullstack: 0.84
+      lane_data_ml_analyst_engineer: 0.58
+    skill_tags:
+      - mongodb
+    implementation_tags:
+      - mongodb_query_optimization
+      - indexing_strategy_optimization
+    ownership_tags:
+      - optimized
+    numeric_evidence:
+      latency_reduction_seconds: 1.2
+    evidence:
+      production: true
+      strength: strong
+
+  - bullet_id: nc_b5
+    text: "Implemented secure REST APIs using OAuth2, JWT authentication, and OpenAPI specifications supporting reliable service integration."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.46
+      lane_py_node_aws_genai_fullstack: 0.86
+      lane_data_ml_analyst_engineer: 0.20
+    skill_tags:
+      - oauth2
+      - jwt
+      - openapi
+      - rest_api
+    implementation_tags:
+      - secure_api_development
+      - authentication_integration
+    ownership_tags:
+      - implemented
+    evidence:
+      production: true
+      strength: strong
+
+  - bullet_id: nc_b6
+    text: "Containerized backend services with Docker and contributed to CI/CD automation using GitHub Actions."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.40
+      lane_py_node_aws_genai_fullstack: 0.78
+      lane_data_ml_analyst_engineer: 0.22
+    skill_tags:
+      - docker
+      - github_actions
+    implementation_tags:
+      - containerized_deployment
+      - ci_cd_pipeline_support
+    ownership_tags:
+      - implemented
+      - contributed
+    evidence:
+      production: true
+      strength: medium
+
+notes:
+  recruiter_summary: "Backend engineer owning Node.js service modules and productionizing LLM-integrated analytics pipelines with schema contract enforcement and MongoDB performance optimization."
+  ats_summary: "Best-supported bullets cluster around Python/Node GenAI full-stack roles, with secondary support for data/ML analyst-engineer roles through analytics workflow and pipeline evidence."

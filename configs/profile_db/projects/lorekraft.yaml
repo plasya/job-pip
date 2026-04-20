@@ -1,0 +1,73 @@
+project_id: proj_lorekraft
+source_type: project
+
+title: LoreKraft – AI-driven MMORPG Quest Engine
+type: personal_project
+
+repo: https://github.com/plasya/LoreKraft.git
+
+summary: "Built backend orchestration platform generating dynamic quests using LLM pipelines and semantic retrieval under concurrent load."
+
+lane_fit:
+  lane_java_spring_backend_fullstack: 0.30
+  lane_py_node_aws_genai_fullstack: 0.95
+  lane_data_ml_analyst_engineer: 0.62
+
+tech_stack:
+  languages:
+    - python
+  frameworks:
+    - flask
+  databases:
+    - mongodb
+  ai_stack:
+    - langchain
+    - pinecone
+    - openai
+
+capabilities:
+  - backend_service_development
+  - llm_pipeline_integration
+  - semantic_retrieval
+  - vector_search
+  - concurrent_request_processing
+  - api_design
+
+architecture:
+  - retrieval_augmented_generation
+  - modular_service_design
+  - async_processing
+  - multi_stage_pipeline
+
+ownership:
+  - designed
+  - implemented
+  - evaluated
+
+scale_signals:
+  concurrent_requests_supported: null
+
+impact_signals:
+  dynamic_content_generation: true
+
+bullets:
+
+  - bullet_id: lore_b1
+    text: "Built Flask-based backend orchestrating LangChain pipelines for dynamic quest generation under concurrent request conditions."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.20
+      lane_py_node_aws_genai_fullstack: 0.94
+      lane_data_ml_analyst_engineer: 0.55
+
+  - bullet_id: lore_b2
+    text: "Implemented semantic retrieval workflows using Pinecone enabling context-aware narrative generation."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.18
+      lane_py_node_aws_genai_fullstack: 0.96
+      lane_data_ml_analyst_engineer: 0.64
+
+evidence_strength:
+  independence: high
+  production_like: medium
+  research_depth: medium
+  system_complexity: high

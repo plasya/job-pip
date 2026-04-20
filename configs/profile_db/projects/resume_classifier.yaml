@@ -1,0 +1,147 @@
+project_id: proj_resume_classifier
+source_type: project
+
+title: AI Resume Categorization System
+type: applied_ml_project
+
+repo: "https://github.com/plasya/resume-categorizer-ml-streamlit"
+
+domain_tags:
+  - recruitment_analytics
+  - document_classification
+  - ml_experimentation
+  - candidate_screening
+
+skill_tags:
+  languages:
+    - python
+    - sql
+  ml:
+    - tfidf
+    - logistic_regression
+    - svm
+    - kmeans
+    - hierarchical_clustering
+    - smote
+    - nlp
+  frameworks:
+    - streamlit
+  databases:
+    - postgresql
+  data_processing:
+    - pandas
+    - document_parsing
+
+implementation_tags:
+  - resume_parsing_pipeline
+  - document_preprocessing
+  - feature_extraction
+  - model_experimentation
+  - classification_pipeline
+  - clustering_analysis
+  - imbalance_handling
+  - evaluation_workflow
+  - dashboard_interface
+  - recruiter_analytics_support
+
+ownership_tags:
+  - designed
+  - implemented
+  - experimented
+  - evaluated
+  - visualized
+
+architecture_tags:
+  - end_to_end_ml_pipeline
+  - semi_structured_document_pipeline
+  - interactive_evaluation_interface
+
+impact_tags:
+  - large_scale_resume_processing
+  - screening_workflow_automation
+  - bias_reduction_support
+  - recruiter_decision_support
+
+scale_metrics:
+  resumes_processed: 5000
+
+bullets:
+  - bullet_id: rc_b1
+    text: "Built an end-to-end resume analysis pipeline processing 5K+ resumes using document parsing, feature extraction, and PostgreSQL-backed storage."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.10
+      lane_py_node_aws_genai_fullstack: 0.44
+      lane_data_ml_analyst_engineer: 0.92
+    skill_tags:
+      - python
+      - postgresql
+      - document_parsing
+    implementation_tags:
+      - resume_parsing_pipeline
+      - document_preprocessing
+    numeric_evidence:
+      resumes_processed: 5000
+
+  - bullet_id: rc_b2
+    text: "Experimented with TF-IDF, Logistic Regression, SVM, KMeans, hierarchical clustering, and SMOTE to compare multiple approaches for resume categorization."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.06
+      lane_py_node_aws_genai_fullstack: 0.40
+      lane_data_ml_analyst_engineer: 0.97
+    skill_tags:
+      - tfidf
+      - logistic_regression
+      - svm
+      - kmeans
+      - hierarchical_clustering
+      - smote
+    implementation_tags:
+      - model_experimentation
+      - classification_pipeline
+      - clustering_analysis
+      - imbalance_handling
+    ownership_tags:
+      - experimented
+      - evaluated
+
+  - bullet_id: rc_b3
+    text: "Developed a Streamlit evaluation interface surfacing model outputs and recruiter-oriented category insights for interactive analysis."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.12
+      lane_py_node_aws_genai_fullstack: 0.38
+      lane_data_ml_analyst_engineer: 0.82
+    skill_tags:
+      - streamlit
+      - python
+    implementation_tags:
+      - evaluation_workflow
+      - dashboard_interface
+      - recruiter_analytics_support
+    ownership_tags:
+      - implemented
+      - visualized
+
+  - bullet_id: rc_b4
+    text: "Used n-gram based NLP analysis and combined evaluation workflows to improve large-scale resume screening support and role classification coverage."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.08
+      lane_py_node_aws_genai_fullstack: 0.36
+      lane_data_ml_analyst_engineer: 0.90
+    skill_tags:
+      - nlp
+      - python
+    implementation_tags:
+      - feature_extraction
+      - evaluation_workflow
+    ownership_tags:
+      - designed
+      - evaluated
+
+evidence_strength:
+  independence: high
+  production_like: medium
+  research_depth: high
+  system_complexity: medium
+
+notes:
+  recruiter_summary: "Strong ML/data project showing experimentation across classical NLP and ML approaches, document pipelines, and recruiter-facing evaluation tooling."

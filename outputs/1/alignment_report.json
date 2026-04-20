@@ -1,0 +1,28 @@
+{
+  "matched_skills": [
+    "java",
+    "javascript",
+    "typescript"
+  ],
+  "missing_skills": [],
+  "recommended_experience_bullets": [
+    "Designed and implemented versioned REST APIs with backward compatibility support for stable cross-service integration in enterprise backend systems.",
+    "Developed and maintained Java Spring Boot microservices supporting enterprise banking, compliance, and KYC workflows across 10+ backend services.",
+    "Reviewed and evaluated 220+ Java and Python assignments covering data structures, algorithms, and concurrency concepts."
+  ],
+  "recommended_project_bullets": [
+    "Designed and implemented a layered Spring Boot backend for scholarship onboarding, application processing, and approval workflows across 3 user roles.",
+    "Integrated frontend flows with backend services and optimized query-driven operations for responsive multi-user application handling.",
+    "Built JWT-secured APIs and role-based access controls for students, institutions, and state-level review workflows."
+  ],
+  "keyword_insertions": [
+    "backend",
+    "development",
+    "engineer",
+    "experience",
+    "for"
+  ],
+  "positioning_summary": "The job is best aligned to lane_java_spring_backend_fullstack. You already match 3 required skill(s) and miss 0. Use top experience and project bullets that show anchor_backend_java relevance.",
+  "chosen_lane": "lane_java_spring_backend_fullstack",
+  "chosen_anchor_resume": "anchor_backend_java"
+}

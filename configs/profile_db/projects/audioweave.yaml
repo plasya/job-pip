@@ -1,0 +1,132 @@
+project_id: proj_audioweave
+source_type: project
+
+title: AudioWeave – Adaptive Background Music for Audiobooks
+type: genai_multimodal_project
+
+repo: ""
+
+domain_tags:
+  - audio_generation
+  - storytelling
+  - sentiment_analysis
+  - multimodal_generation
+
+skill_tags:
+  languages:
+    - python
+  ml:
+    - bert
+    - zero_shot_classification
+    - sentiment_analysis
+  audio_ai:
+    - text_to_speech
+    - music_generation
+    - audio_overlay
+    - narration_alignment
+  frameworks:
+    - transformers
+    - tts
+    - audiocraft
+  processing:
+    - text_segmentation
+    - waveform_processing
+
+implementation_tags:
+  - sentiment_scoring_pipeline
+  - text_to_speech_generation
+  - background_music_generation
+  - audio_segment_processing
+  - narration_music_alignment
+  - multimodal_pipeline_orchestration
+  - text_cleaning
+  - segment_level_generation
+
+ownership_tags:
+  - designed
+  - implemented
+  - orchestrated
+  - evaluated
+
+architecture_tags:
+  - multi_stage_generation_pipeline
+  - segment_based_audio_workflow
+  - adaptive_content_generation
+
+impact_tags:
+  - narrative_audio_enhancement
+  - sentiment_aware_music_selection
+  - multimodal_storytelling_pipeline
+
+bullets:
+  - bullet_id: aw_b1
+    text: "Built a multi-stage Python pipeline that segments story text, generates narration, classifies sentiment, and produces mood-aligned background music."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.06
+      lane_py_node_aws_genai_fullstack: 0.91
+      lane_data_ml_analyst_engineer: 0.52
+    skill_tags:
+      - python
+      - sentiment_analysis
+      - text_to_speech
+      - music_generation
+    implementation_tags:
+      - multimodal_pipeline_orchestration
+      - segment_level_generation
+      - narration_music_alignment
+
+  - bullet_id: aw_b2
+    text: "Used BERT and zero-shot classification workflows to infer narrative mood and drive adaptive soundtrack generation for audiobook segments."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.04
+      lane_py_node_aws_genai_fullstack: 0.94
+      lane_data_ml_analyst_engineer: 0.66
+    skill_tags:
+      - bert
+      - zero_shot_classification
+      - sentiment_analysis
+    implementation_tags:
+      - sentiment_scoring_pipeline
+      - adaptive_content_generation
+    ownership_tags:
+      - implemented
+
+  - bullet_id: aw_b3
+    text: "Integrated TTS-based narration generation with MusicGen background synthesis and waveform overlay to create end-to-end audio outputs."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.08
+      lane_py_node_aws_genai_fullstack: 0.93
+      lane_data_ml_analyst_engineer: 0.48
+    skill_tags:
+      - text_to_speech
+      - music_generation
+      - waveform_processing
+    implementation_tags:
+      - text_to_speech_generation
+      - background_music_generation
+      - audio_segment_processing
+    ownership_tags:
+      - integrated
+      - orchestrated
+
+  - bullet_id: aw_b4
+    text: "Designed text cleaning and segment-level processing workflows to keep narration duration and background music aligned across generated scenes."
+    lane_fit:
+      lane_java_spring_backend_fullstack: 0.10
+      lane_py_node_aws_genai_fullstack: 0.84
+      lane_data_ml_analyst_engineer: 0.42
+    implementation_tags:
+      - text_cleaning
+      - segment_level_generation
+      - narration_music_alignment
+    ownership_tags:
+      - designed
+
+evidence_strength:
+  independence: high
+  production_like: medium
+  research_depth: medium
+  system_complexity: high
+
+notes:
+  recruiter_summary: "Strong multimodal GenAI project combining sentiment analysis, TTS, music generation, and audio orchestration in a structured pipeline."
